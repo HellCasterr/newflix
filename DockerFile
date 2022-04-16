@@ -1,0 +1,11 @@
+FROM Node:16
+
+LABEL Charles Okeke="okekecharles91@gmail.com"
+
+WORKDIR /app
+
+COPY . /app
+
+RUN yarn
+
+CMD [ "YARN" "START" ]
